@@ -1,0 +1,51 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Weather App</title>
+      <link rel="stylesheet" type="text/css" href="/style.css" />
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      />
+    </head>
+    <body>
+      <div class = "custom-cursor">
+      <div class="background1">
+        <div class="background2">
+          <a href="http://localhost:5000/weather" style="text-decoration: none; cursor: url(cursorr.cur), auto">
+            <h1>Weather Companion</h1>
+          </a>          
+        <div class="cloudone"></div>
+        <form action="/weather" method="get">
+          <input type="text" name="city" placeholder="Enter city name" />
+          <button type="submit">status</button>
+        </form>
+
+      <% if (error) { %> 
+        <p class="error"><%= error %></p>
+        <% } 
+        
+        else if (weather) { %>
+        <div class="card">
+          <!-- Add your weather data here -->
+          <p>
+            <i class="fas fa-thermometer-half"></i>
+            <%=weather.main.temp%>&deg;C
+          </p>
+          <p>
+            <i class="fas fa-cloud"></i>
+            <%=weather.weather[0].main%>
+          </p>
+
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            <%=weather.name%>, <%=weather.sys.country%>
+          </p>
+        </div>
+        <% } %>
+
+      </div>
+    </div>
+  </div>
+    </body>
+  </html>

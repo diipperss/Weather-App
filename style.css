@@ -1,0 +1,181 @@
+/* Import the Khula font */
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+
+}
+.custom-cursor {
+  cursor: url(cursorr.cur), auto;
+}
+
+.background1{
+  width: 100%;
+  /*height: 1050px;
+  flex-shrink: 0;*/
+  height: 100vh; /* This makes sure your body takes up the full viewport height */
+  margin-top: 0; /* This removes any default margin */
+  background: linear-gradient(#b57e776b 40%, lightgray 60%);
+
+}
+
+.cloudone {
+  width: 230%;
+  height: 50px;
+  padding-top: 20%;
+  margin-left: 100%;
+  padding-right: 0;
+  margin-right: 0;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="211" height="133" viewBox="0 0 211 133" fill="none"><ellipse cx="92" cy="43" rx="46" ry="43" fill="white"/><ellipse cx="117.439" cy="87.543" rx="46" ry="43" transform="rotate(1.95345 117.439 87.543)" fill="white"/><ellipse cx="165" cy="64" rx="46" ry="43" fill="white"/><ellipse cx="46" cy="78" rx="46" ry="43" fill="white"/></svg>') repeat-x;
+  background-size: relative;
+  position: relative;
+  z-index: 1;
+}
+
+.cloudone{
+  animation: cloudmove 15s infinite ease-in-out;
+}
+@keyframes cloudmove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+
+.background2{
+  width: 30%;
+  height: 100vh;
+  background: url(https://i.pinimg.com/474x/a0/3e/63/a03e6314d363c63e60407309c4218a09.jpg), lightgray 50% / cover no-repeat;
+  border-radius: 0.5%; /* This makes the image circular, you can adjust as needed */
+  box-shadow: 0 0 20px 20px #ddb2ac;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-top:0;
+  width: 700px;
+height: 95px;
+flex-shrink: 0;
+  margin-left: 140%;
+  padding-top:10%;
+  color: #b57e77;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Sniglet;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: transform 0.2s; /* Add a transition for the transform property */
+
+}
+h1:hover {
+  transform: scale(1.05); /* Increase the size by 5% on hover */
+}
+
+form {
+  margin-top: 20%;
+  /*display: inline-block;
+  text-align: left;*/
+  border-radius: 57px;
+background: #E9E2E7;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+width: 347px;
+height: 63px;
+flex-shrink: 0;
+margin-left:175%;
+}
+
+form input[type="text"] {
+  width: 347px;
+  height: 63px;
+  background-color: #e9e2e7;
+  color: rgba(181, 126, 119, 0.42);
+  text-align: center;
+  font-family: Sniglet;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  border-radius: 57px;
+}
+
+button[type="submit"] {
+  margin-top:20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  margin-left: 65%;*/
+  background-color: #e9e2e7;
+  color: #b57e776b;
+  text-align: center;
+  font-family: Sniglet;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  border-radius: 57px;
+  transition: transform;
+  cursor: url(cursorr.cur), auto;
+}
+
+button:hover{
+  transform: scale(1.2);
+  transition-duration: 0.2s;
+}
+
+.card {
+  position: relative;
+  border-radius: 57px;
+  background: #E9E2E7;
+  box-shadow: 0px 10px 15px 5px rgb(255, 155, 155);
+  text-align: center;
+  font-family: Sniglet;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #b57e77;
+  left:0%;
+  bottom:25%;
+  transition: background 2s, color 2s;
+}
+
+.card:hover{
+  background:#E9E2E7;
+  color: lightpink;
+}
+
+.loading {
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.error {
+  position: relative;
+  border-radius: 57px;
+  background: #E9E2E7;
+  box-shadow: 0px 10px 15px 5px rgb(255, 155, 155);
+  text-align: center;
+  font-family: Sniglet;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color:red;
+  left:0%;
+  bottom:25%;
+}
